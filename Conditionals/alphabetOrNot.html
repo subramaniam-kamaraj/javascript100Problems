@@ -1,0 +1,37 @@
+<!-- program to check whether a character is alphabet or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check whether a character is alphabet or not. </title>
+</head>
+
+<body>
+<h1> Program to check whether a character is alphabet or not. </h1>
+    Type here -->  <input type="text" id="a"><br><br>
+     
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let check=/^[A-Za-z]+$/;
+            let char=document.getElementById("a").value;
+            if (char.match(check)) {
+                document.getElementById("root").innerHTML="<h1> " +char+" is a alphabet </h1>";     
+            }
+          else {
+            document.getElementById("root").innerHTML="<h1> " +char+ " is a not a alphabet</h1>";
+     }            
+           
+    }      
+                
+            
+</script>
+<div id="root"></div>
+</html>

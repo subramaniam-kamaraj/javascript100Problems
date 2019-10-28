@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check whether a year is leap year or not. </title>
+</head>
+
+<body>
+<h1> Program to check whether a year is leap year or not. </h1>
+    Enter Year to check  <input type="number" id="a"><br><br>
+     
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let year=Number(document.getElementById("a").value);
+            if (year%400 == 0) {
+                document.getElementById("root").innerHTML="<h1> " +year+ " is a leap year</h1>";     
+            }
+         else if (year%100 == 0) {
+            document.getElementById("root").innerHTML="<h1> " +year+ " is not a leap year</h1>";
+         }
+        else if (year%4 == 0) {
+             document.getElementById("root").innerHTML="<h1> " +year+ " is a leap year</h1>";
+        }
+          else {
+            document.getElementById("root").innerHTML="<h1> " +year+ " is a not leap year</h1>";
+     }        
+            
+           
+    }      
+                
+            
+</script>
+<div id="root"></div>
+</html>

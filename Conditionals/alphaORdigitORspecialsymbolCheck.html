@@ -1,0 +1,42 @@
+<!-- program to check whether a character is alphabet or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> program to input any character and check whether it is alphabet, digit or special character.  </title>
+</head>
+
+<body>
+<h1>  program to input any character and check whether it is alphabet, digit or special character.  </h1>
+    Type here -->  <input type="text" maxlength=1 id="a"><br><br>
+     
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let char_check=/^[A-Za-z]+$/;
+            let num_check=/^[0-9]+$/;
+            let special=/[-!$%^&*()_+|~=`{}\[\]:\/;<>?,.@#]/;
+            let char=document.getElementById("a").value;
+            if (char.match(char_check)) 
+            {
+                document.getElementById("root").innerHTML="<h1> " +char+" is a alphabet </h1>";     
+            }
+            else if (char.match(num_check))
+            {
+                document.getElementById("root").innerHTML="<h1> " +char+ " is a digit</h1>";
+            }      
+        else if (char.match(special)){
+            document.getElementById("root").innerHTML="<h1> " +char+ " is a special symbol</h1>";
+        }      
+           
+    }               
+</script>
+<div id="root"></div>
+</html>

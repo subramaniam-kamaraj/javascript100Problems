@@ -1,0 +1,41 @@
+<!-- program to check whether a character is alphabet or not. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Program to input any alphabet and check whether it is vowel or consonant. </title>
+</head>
+
+<body>
+<h1>  Program to input any alphabet and check whether it is vowel or consonant. </h1>
+    Enter alphabet <input type="text" maxlength=1 id="a"><br><br>
+     
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let alp=/^[A-Za-z]+$/;
+            let check=/^[aeiouAEIOU]$/i;
+            let char=document.getElementById("a").value;
+            if (char.match(alp)) {
+                if(char.match(check))
+                {
+                    document.getElementById("root").innerHTML="<h1> " +char+" is a vowels </h1>";     
+                }
+                else {
+                    document.getElementById("root").innerHTML="<h1> " +char+ " is a consonents</h1>";
+                    }
+            } 
+            else{
+                    alert("enter alphabets only");
+                 }
+            } 
+</script>
+<div id="root"></div>
+</html>

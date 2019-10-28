@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check whether a number is even or odd. </title>
+</head>
+
+<body>
+<h1> program to check whether a number is even or odd. </h1>
+    Enter Number  <input type="number" id="a"><br><br>
+     
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let a=Number(document.getElementById("a").value);
+            
+            if( a%2===0 )
+            {
+                 document.getElementById("root").innerHTML="<h1>" +a+ " is Even Number </h1>";
+            }
+           
+            else
+            {
+                document.getElementById("root").innerHTML="<h1> " +a+ " is Odd Number</h1>";
+            }
+    }
+</script>
+<div id="root"></div>
+</html>
