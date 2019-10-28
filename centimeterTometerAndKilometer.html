@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a program to enter radius of a circle and find its diameter, circumference and area.</title>
+</head>
+
+<body>
+  <h1>A program to enter length in centimeter and convert it into meter and kilometer</h1>
+     Length <input type="number" id="cm"/>cm<br><br>
+  
+  <Button onClick="meter()"> into Meter </Button>
+  <Button onClick="kilometer()"> into Kilometer </Button>
+</body>
+
+<script>
+
+    let meter=()=>{
+            let cm=Number(document.getElementById("cm").value);
+            res=cm/100;
+            console.log(res);
+            document.getElementById("root").innerHTML="<h1>"+res+"m"+"</h1>";
+     }
+     let kilometer=()=>{
+            let cm=Number(document.getElementById("cm").value);
+            res=cm/100000;
+            console.log(res);
+            document.getElementById("root").innerHTML="<h1>"+res+"Km"+"</h1>";
+     }
+
+     
+
+</script>
+<div id="root"></div>
+</html>

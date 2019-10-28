@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to enter two angles of a triangle and find the third angle.</title>
+</head>
+
+<body>
+<h1>Program to enter two angles of a triangle and find the third angle.</h1>
+    First Angle <input type="number" id="first"> <br><br>   
+    Second Angle <input type="number" id="second"><br><br>
+  
+  <Button onClick="calc()"> Result </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let first=Number(document.getElementById("first").value);
+            let second=Number(document.getElementById("second").value);
+            res=(first+second)-180;
+            document.getElementById("root").innerHTML="<h1>"+"Third angle of the triangle is "+Math.abs(res)+"</h1>";
+     }
+</script>
+<div id="root"></div>
+</html>

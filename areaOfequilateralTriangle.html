@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Program to calculate area of an equilateral triangle</title>
+</head>
+
+<body>
+<h1> Program to calculate area of an equilateral triangle </h1>
+    Side <input type="number" id="side"><br><br>
+  
+  <Button onClick="calc()"> Area </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let side=Number(document.getElementById("side").value);
+            res=((Math.sqrt(3)/4)*(side*side));
+            document.getElementById("root").innerHTML="<h1>"+"Area of the Equilateral triangle is "+res+"</h1>";
+     }
+</script>
+<div id="root"></div>
+</html>

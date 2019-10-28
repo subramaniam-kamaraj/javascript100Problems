@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Area of Rectangle</title>
+</head>
+
+<body>
+  
+  <form>
+  <h1>Find the Area of Rectangle</h1>
+  Length:<input type="number" id="length"/>
+  Breadth:<input type="number" id="breadth"/>
+  </form>
+  <Button onClick="areaCalc()">Calculate </Button>
+</body>
+
+<script>
+
+    let areaCalc=()=>{
+            let l=Number(document.getElementById("length").value);
+            let b=Number(document.getElementById("breadth").value);
+            let c=l*b;
+            console.log(c);
+            document.getElementById("root").innerHTML="<h1>Area of the Rectangle is "+c+"</h1>";
+     }
+
+</script>
+<div id="root"></div>
+</html>

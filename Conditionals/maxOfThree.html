@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>  program to find maximum between three numbers</title>
+</head>
+
+<body>
+<h1> Program to find maximum between three numbers </h1>
+    Num 1  <input type="number" id="a"><br><br>
+    Num 2  <input type="number" id="b"><br><br>
+    Num 3  <input type="number" id="c"><br><br>
+  
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let a=Number(document.getElementById("a").value);
+            let b=Number(document.getElementById("b").value);
+            let c=Number(document.getElementById("c").value);
+            if( (a>b) && (a>c) )
+            {
+                 document.getElementById("root").innerHTML="<h1> Num1 " +a+ " is max </h1>";
+            }
+            else if((b>a) && (b>c))
+            {
+                document.getElementById("root").innerHTML="<h1> Num2 " +b+ " is max </h1>";
+            }
+            else
+            {
+                document.getElementById("root").innerHTML="<h1> Num3 " +c+ " is max </h1>";
+            }
+    }
+</script>
+<div id="root"></div>
+</html>

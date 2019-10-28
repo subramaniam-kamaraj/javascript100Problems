@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IOBasicDatatypes</title>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+<script>
+    const number=(a,b)=>{
+        let c=Number(a)+Number(b);
+        console.log(c);
+        document.getElementById("root").innerHTML="<h1>sum of two number is "+c+"</h1>";
+    }
+    a=prompt("Enter the value of a:");
+    b=prompt("Enter the value of b:");
+    number(a,b);
+</script>
+
+
+</html>

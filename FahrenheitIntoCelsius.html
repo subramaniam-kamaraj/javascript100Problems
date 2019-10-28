@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to enter temperature in Fahrenheit and convert it into Celsius.</title>
+</head>
+
+<body>
+  <h1> Program to enter temperature in Fahrenheit and convert it into Celsius</h1>
+  Temperature<input type="number" id="temp"/> &#8457;<br><br>
+  
+  <Button onClick="celsius()"> into celsius </Button>
+  
+</body>
+
+<script>
+
+    let celsius=()=>{
+            let temp=Number(document.getElementById("temp").value);
+            res=((temp - 32) * (5/9)); 
+            console.log(res);
+            document.getElementById("root").innerHTML="<h1>"+res+"&#8451;"+"</h1>";
+     }
+     
+
+     
+
+</script>
+<div id="root"></div>
+</html>

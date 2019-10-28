@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to find SquareRoot of the given number`.</title>
+</head>
+
+<body>
+<h1>Program to find SquareRoot of the given number`.<h1><br>
+    Number <input type="number" id="num"/> <br>
+  
+  <Button onClick="sqroot()"> Result </Button>
+  
+</body>
+
+<script>
+
+    let sqroot=()=>{
+            let num=Number(document.getElementById("num").value);
+            res=Math.sqrt(num);
+            document.getElementById("root").innerHTML="<h1>"+"SquareRoot of the "+num+" is "+res+"</h1>";
+     }
+</script>
+<div id="root"></div>
+</html>

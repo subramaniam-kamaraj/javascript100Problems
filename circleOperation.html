@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a program to enter radius of a circle and find its diameter, circumference and area.</title>
+</head>
+
+<body>
+  <h1>A program to enter radius of a circle and find its diameter, circumference and area.</h1>
+  Radius:<input type="number" id="radius"/><br><br>
+  
+  <Button onClick="diameter()">Diameter </Button>
+  <Button onClick="circumference()">Circumference </Button>
+  <Button onClick="area()">Area </Button>
+</body>
+
+<script>
+
+    let area=()=>{
+            let r=Number(document.getElementById("radius").value);
+            res=Math.PI*(r*r);
+            console.log(res);
+            document.getElementById("root").innerHTML="<h1>Area of the circle is "+res+"</h1>";
+     }
+     let diameter=()=>{
+            let r=Number(document.getElementById("radius").value);
+            res=2*r;
+            console.log(res);
+            document.getElementById("root").innerHTML="<h1>Diameter of the circle is"+res+"</h1>";
+     }
+
+     let circumference=()=>{
+            let r=Number(document.getElementById("radius").value);
+            res=2*Math.PI*r;
+            console.log(res);
+            document.getElementById("root").innerHTML="<h1>Circumference of the Circle is "+res+"</h1>";
+     }
+
+</script>
+<div id="root"></div>
+</html>

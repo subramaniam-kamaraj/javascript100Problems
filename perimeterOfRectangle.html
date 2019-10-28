@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>perimeterRectangle</title>
+</head>
+
+<body>
+  
+  <form>
+  <h1>Find the perimeter of Rectangle</h1>
+  Length:<input type="number" id="length"/>
+  Breadth:<input type="number" id="breadth"/>
+  </form>
+  <Button onClick="perimeterCalc()">Calculate </Button>
+</body>
+
+<script>
+
+    let perimeterCalc=()=>{
+            let l=Number(document.getElementById("length").value);
+            let b=Number(document.getElementById("breadth").value);
+            let c=2*(l+b);
+            console.log(c);
+            document.getElementById("root").innerHTML="<h1>Perimeter of the Rectangle is "+c+"</h1>";
+     }
+
+</script>
+<div id="root"></div>
+</html>

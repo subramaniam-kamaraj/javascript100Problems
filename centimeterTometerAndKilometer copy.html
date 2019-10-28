@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to convert days into years, weeks and days.</title>
+</head>
+
+<body>
+  <h1> program to convert days into years, weeks and days. </h1>
+  No of Days <input type="number" id="days"/><br><br>
+  
+  <Button onClick="calc()"> Result </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let days=Number(document.getElementById("days").value);
+            years=days/365;
+            weeks=(days % 365)/7;
+            days=days - ((years*365) + (weeks*7));
+            document.getElementById("root").innerHTML="<h1>"+years+"years"+"<br>"+weeks+"<br>"+days+"<br>"+"days"+"</h1>";
+     }
+</script>
+<div id="root"></div>
+</html>

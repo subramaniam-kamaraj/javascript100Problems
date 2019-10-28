@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to find power of the given number eg x^y.</title>
+</head>
+
+<body>
+  <h1> Program to find power of the given number eg x^y</h1>
+       Number  <input type="number" id="num"/><br>
+       Power Number <input type="number" id="pow"/> <br>
+  
+  <Button onClick="pow()"> Result </Button>
+  
+</body>
+
+<script>
+
+    let pow=()=>{
+            let num=Number(document.getElementById("num").value);
+            let pow=Number(document.getElementById("pow").value);
+            res=Math.pow(num,pow);
+            document.getElementById("root").innerHTML="<h1>"+num+"^"+pow+"="+res+"</h1>";
+     }
+</script>
+<div id="root"></div>
+</html>

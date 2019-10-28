@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to enter P, T, R and calculate Compound Interest.  </title>
+</head>
+<body>
+    <h1>Program to enter P, T, R and calculate Compound Interest. </h1>
+    <h3>Principal P <input type="number" id="p"></h3>
+    <h3>TimePeriod T <input type="number" id="t"></h3>
+    <h3>Rate of interest R <input type="number" id="r"></h3>
+
+    <Button onClick="compoundInterest()"> calculate </Button>
+   </body>
+<script>
+    let compoundInterest=()=>{
+        let p=document.getElementById("p").value;
+        let t=document.getElementById("t").value;
+        let r=document.getElementById("r").value;
+        ci=p*Math.pow((1+r/100),t);
+        console.log(ci);
+        document.getElementById("root").innerHTML="<h1>"+"Compound interest CI= "+ci+"</h1>";
+    }
+        
+</script>
+<div id="root"></div>
+</html>

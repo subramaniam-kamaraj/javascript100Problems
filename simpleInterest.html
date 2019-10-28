@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Write a program to enter marks of five subjects and calculate total, average and percentage. </title>
+</head>
+<body>
+    <h1>Program to enter P, T, R and calculate Simple Interest.  </h1>
+    <h3>Principal, P  <input type="number" id="p"></h3>
+    <h3>TimePeriod, T  <input type="number" id="t"></h3>
+    <h3>Rate of interest, R  <input type="number" id="r"></h3>
+
+    <Button onClick="simpleInterest()"> calculate </Button>
+   </body>
+<script>
+    let simpleInterest=()=>{
+        let p=document.getElementById("p").value;
+        let t=document.getElementById("t").value;
+        let r=document.getElementById("r").value;
+        si=(p*t*r)/100;
+        document.getElementById("root").innerHTML="<h1>simple interest SI= "+si+"</h1>";
+    }
+        
+</script>
+<div id="root"></div>
+</html>
