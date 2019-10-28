@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>  program to check whether a number is negative, positive or zero. </title>
+</head>
+
+<body>
+<h1> Program to check whether a number is negative, positive or zero. </h1>
+    Enter Number  <input type="number" id="a"><br><br>
+     
+  <Button onClick="calc()"> Check </Button>
+  
+</body>
+
+<script>
+
+    let calc=()=>{
+            let a=Number(document.getElementById("a").value);
+            
+            if( a>0 )
+            {
+                 document.getElementById("root").innerHTML="<h1>" +a+ " is Positive Number</h1>";
+            }
+            else if(a==0)
+            {
+                document.getElementById("root").innerHTML="<h1>" +a+ " is Zero </h1>";
+            }
+            else
+            {
+                document.getElementById("root").innerHTML="<h1> " +a+ " is Negative </h1>";
+            }
+    }
+</script>
+<div id="root"></div>
+</html>
